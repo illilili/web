@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>짱구 Table</title>
+  </head>
+  <body onload="init()">
+    <script>
+      let arrData = ["홍길동", "허준", "임꺽정"];
+      let images = ["Fig1.jpg", "Fig2.jpg", "Fig3.jpg"];
+
+      function init() {
+        let tableBody = document.getElementById("tableBody");
+
+        for (let i = 0; i < arrData.length; i++) {
+          let row = document.createElement("tr");
+
+          let arrCell = document.createElement("td");
+          arrCell.innerHTML = arrData[i];
+          row.appendChild(arrCell);
+
+          let imgCell = document.createElement("td");
+          let image = document.createElement("img");
+          image.src = images[i];
+          imgCell.appendChild(image);
+          row.appendChild(imgCell);
+
+          tableBody.appendChild(row);
+        }
+      }
+    </script>
+
+    <h2>테이블 만들기</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>이미지</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </body>
+</html>

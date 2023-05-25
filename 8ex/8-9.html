@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML files</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body onload="init()">
+    <script>
+      let arrData = new Array();
+      let data2 = 1;
+      let dataL = "";
+      let dataM = "";
+      let dataN = "";
+      let no = 1;
+      function init() {
+        arrData = ["홍길동", "허준"];
+        for (let i = 1; i < 3; i++) {
+          dataL = "A" + i;
+          dataM = "B" + i;
+          document.getElementById(dataL).innerHTML = arrData[i - 1];
+          dataN = "그림" + no;
+          dataN = '<img src="' + dataN + '.png">';
+          document.getElementById(dataM).innerHTML = dataN;
+        }
+      }
+    </script>
+
+    <h2>테이블 만들기</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>이미지</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="A1"></td>
+          <td id="B1"></td>
+        </tr>
+        <tr>
+          <td id="A2"></td>
+          <td id="B2"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

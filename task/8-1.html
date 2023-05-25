@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>짱구 Table</title>
+  </head>
+  <body>
+    <table id="sin">
+      <script>
+        var names = ["홍길동", "허준", "임꺽정"];
+        var images = ["Fig1.jpg", "Fig2.jpg", "Fig3.jpg"];
+
+        for (var i = 0; i < names.length; i++) {
+          var table = document.getElementById("sin");
+
+          var row = table.insertRow();
+
+          var cell1 = row.insertCell();
+          cell1.innerHTML = names[i];
+
+          var cell2 = row.insertCell();
+          var img = document.createElement("img");
+          img.src = images[i];
+          img.width = 70;
+          cell2.appendChild(img);
+        }
+      </script>
+    </table>
+  </body>
+</html>

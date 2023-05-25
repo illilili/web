@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>라디오버튼 만들기</title>
+  </head>
+  <body>
+    <h3>연습문제</h3>
+    <hr />
+    <h4>라디오1</h4>
+    <form>
+      <input type="radio" name="china" value="1" />
+      짜장면<br />
+      <input type="radio" name="china" value="2" checked />
+      짬뽕<br />
+    </form>
+    <hr />
+    <h4>라디오2</h4>
+    <form>
+      <input type="radio" name="china" value="1" />
+      짜장면<img src="media/zz.png" /><br />
+      <input type="radio" name="china" value="2" checked />
+      짬뽕<img src="media/zz.png" /><br />
+    </form>
+    <hr />
+    <h4>체크박스</h4>
+    <form>
+      일 <input type="checkbox" value="1" /> 월
+      <input type="checkbox" value="2" /> 화
+      <input type="checkbox" value="3" /> 수
+      <input type="checkbox" value="3" /> 목
+      <input type="checkbox" value="3" /> 금
+      <input type="checkbox" value="3" /> 토 <input type="checkbox" value="3" />
+    </form>
+    <hr />
+    <h4>콤보박스</h4>
+    <form>
+      <select name="china">
+        <option value="1">서울</option>
+        <option value="2">부산</option>
+        <option value="3">제주</option>
+      </select>
+    </form>
+    <hr />
+    <h4>데이터리스트</h4>
+    <form>
+      나라 : <input type="text" name="country" list="countries" /><br />
+      <datalist id="countries">
+        <option value="경기도"></option>
+        <option value="강원도"></option>
+        <option value="브라질"></option>
+        <option value="브라질"></option>
+        <option value="브라질"></option>
+        <option value="브라질"></option>
+      </datalist>
+    </form>
+  </body>
+</html>

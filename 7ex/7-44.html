@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>방문 시간에 따라 변하는 배경색</title>
+  </head>
+  <body>
+    <h3>페이지 방문달이 3월이면 배경 red</h3>
+    <hr />
+    <script>
+      let current = new Date(); // 현재 시간 값을 가진 Date 객체 생성
+      if (current.getMonth() + 1 == 3)
+        document.body.style.backgroundColor = "red";
+      else document.body.style.backgroundColor = "lightskyblue";
+
+      document.write("이번 달 : ");
+      document.write(current.getMonth() + 1, "월");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>방문 시간에 따라 변하는 배경색</title>
+  </head>
+  <body>
+    <h3>내일</h3>
+    <hr />
+    <script>
+      function addDays(date, days) {
+        const clone = new Date(date);
+        clone.setDate(date.getDate() + dats);
+        return clone;
+      }
+      let today = new Date();
+
+      let nextDate = new Date(
+        today.getFullYear(),
+        today.getMonth(),
+        today.getDate() + 1000
+      );
+
+      document.write(nextDate);
+    </script>
+  </body>
+</html>
